@@ -54,7 +54,7 @@ module.exports = class Dbleu {
 
     /**
      * Update the stats for your Bot
-     * @param {Number} serverCount 
+     * @param {Number|string} serverCount 
      * @returns {Promise<Bot>}
      */
     updateStats(serverCount) {
