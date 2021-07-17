@@ -1,52 +1,30 @@
 {
-    "_from": "discord-botlist-api",
-    "_id": "discord-botlist-api@2.1.0",
-    "_inBundle": false,
-    "_integrity": "sha512-9HnPgbwdlENUD1XzC2ILbd3wurYrHuXVVUCyxYEoLiIusVzs2P95Ksxx9t1xTYplyr3/dS727XXl8dWtd7PqzQ==",
-    "_location": "/discord-botlist-api",
-    "_phantomChildren": {},
-    "_requested": {
-        "type": "tag",
-        "registry": true,
-        "raw": "discord-botlist-api",
-        "name": "discord-botlist-api",
-        "escapedName": "discord-botlist-api",
-        "rawSpec": "",
-        "saveSpec": null,
-        "fetchSpec": "latest"
-    },
-    "_requiredBy": [
-        "#USER",
-        "/"
-    ],
-    "_resolved": "https://registry.npmjs.org/discord-botlist-api/-/discord-botlist-api-2.1.0.tgz",
-    "_shasum": "57694b8222eaa5eb7c25b52514d3ae569ce0efac",
-    "_spec": "discord-botlist-api",
-    "_where": "C:\\Users\\kiara\\Documents\\VSC\\Stuff",
-     "author": "'LPTP1",
-    "bundleDependencies": false,
-    "dependencies": {
-        "request": "^2.88.2",
-        "websocket": "^1.0.32"
-    },
-    "deprecated": false,
-    "description": "The official discord-botlist.eu npm package",
-    "devDependencies": {
-        "request": "^2.88.2"
-    },
-    "keywords": [
-        "discord",
-        "discord-botlist",
-        "botlist",
-        "discordbotlist",
-        "LPTP1"
-    ],
-    "license": "MIT",
-    "main": "index.js",
-    "name": "discord-botlist-api",
-    "scripts": {
-        "test": "echo No test script"
-    },
-    "version": "2.1.1",
-    "typings": "./index.d.ts"
+  "name": "@dbleu/node",
+  "version": "1.0.0",
+  "description": "The node.js library for the discord-botlist.eu HTTP api",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiscordBotlistEU/node-library.git"
+  },
+  "keywords": [
+    "discord",
+    "botlist",
+    "api",
+    "dbleu",
+    "HTTP"
+  ],
+  "author": "dbleu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DiscordBotlistEU/node-library/issues"
+  },
+  "homepage": "https://github.com/DiscordBotlistEU/node-library#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "node-fetch": "^2.6.1"
+  }
 }
