@@ -53,6 +53,24 @@ module.exports = class Dbleu {
     }
 
     /**
+     * Get the vote/server analytics of your bot
+     * @returns {Promise<Bot>}
+     */
+    analytics() {
+        return new Promise((resolve, reject) => {
+            fetch(`${config.endpoints}/${config.version}/analytics`, {
+                method: "GET",
+                headers: {
+                    "Authorization": `Bearer ${this.token}`
+                }
+            }).then(async res => {
+                if (res.status !== 200) return reject(`${res.status}: ${(await res.json()).message}`)
+                resolve(await res.json())
+            })
+        })
+    }
+
+    /**
      * Update the stats for your Bot
      * @param {Number|string} serverCount 
      * @returns {Promise<Bot>}
